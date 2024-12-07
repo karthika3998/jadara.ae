@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title><Document-1></Document-1></title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        } 
+
+        .nav {
+            height: 80px;
+            background: linear-gradient(90deg, #2c6e49, #4caf50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+            .nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            position: relative;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: rgb(146, 146, 189);
+            border-radius: 5px;
+        }
+        .logo{
+            height:80px;
+            width: auto;
+        }
+        .logo img {
+            height: 100%;
+            max-height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+        .dropdown_menue {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #375a7f;
+            z-index: 1000;
+        }
+        .dropdown_menue ul {
+            display: block;
+            margin: 10;
+        }
+        .dropdown_menue ul li {
+            padding: 10px;
+            width: 400px;
+        }
+        .dropdown_menue ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .dropdown_menue ul li a:hover {
+            background-color:red;
+            display: block;
+        }
+        
+        .nav li:hover .dropdown_menue {
+            display: block;
+        }
+
+        .txt {
+            height: 80px;
+            background-color: gainsboro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 50px;
+        }
+
+        .card {
+            background-color: white;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top:20px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            color: #2c6e49;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        .card ul {
+            list-style: square;
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+        .pa {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #333;
+            width: 90%;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%;
+            }
+
+            .h1, .h2 {
+                margin: 20px;
+            }
+
+            .nav a {
+                font-size: 1rem;
+            }
+        
+</style>
+<body>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a href="jahome.html">Home</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <div class="dropdown_menue">
+                        <ul>
+                            <li><a href="jaservices.html">Organic Waste Solutions</a></li>
+                            <li><a href="jahaz.html">Hazardous Waste Solutions</a></li>
+                            <li><a href="jaenv.html">Environmental Management Solutions</a></li>
+                            <li><a href="jawa.html">Water Treatment Solutions</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="jaaboutus.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="txt">
+            <h2>Environmental Management Solutions</h2></div>
+        <div class="pa">
+            <p>Environmental projects frequently call for rigorous analyses and a complete
+                understanding of tested technology that can reduce both time and cost has put
+                together a multidisciplinary team of environmental engineers in response to this
+                need, and they are committed to offering workable, cutting-edge solutions in their
+                particular fields of competence. Lathader diverse expertise successfully delivered
+                high-quality environmental services in a variety of fields as it developed into an
+                established company.</p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h2>Environmental Compliance Audit</h2>
+                <p>An environmental compliance audit assesses the environmental performance and practices of an organization or company to ensure its compliance with applicable laws and regulations</p>
+            </div>
+            <div class="card">
+                <h2>Environmental Impact Assessment</h2>
+                <p>Environmental Impact Assessment (EIA) is a tool used to assess the significant effects of a project or development proposal on the environment. EIAs make sure that project decision makers think about the likely effects on the environment at the earliest possible time and aim to avoid, reduce or offset those effects.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Environmental Site Assessment</h2>
+            <p>An environmental site assessment (also known as ESA, environmental due diligence and all appropriate inquiry) is commonly done prior to commercial or industrial property transactions to assess the likelihood of contamination and the liability for cleanup if contamination is found.</p>
+        </div>
+        <div class="card">
+            <h2>Baseline Environmental Assessment</h2>
+            <p>A Baseline Environmental Assessment (BEA) is a document that describes the environmental conditions of a property at the time of its acquisition. It identifies whether there are contaminants that exceed the thresholds set by Michigan's most protective cleanup criteria</p>
+        </div>
+        <div class="card">
+            <h2>Environmental Noise & Vibration Monitoring</h2>
+            <p>Noise and vibration monitoring helps protect employees' hearing and health. Noise-induced hearing loss is recognized as a priority work-related disease for employees. Workers' hearing must be protected, coming under local and international regulations.</p>
+        </div>
+        <div class="card">
+            <h2>Third Party Environmental Auditing</h2>
+            <p></p>
+        </div>
+        <div class="card">
+            <h2>Marine Water Testing</h2>
+            <p>Seawater testing analyses seawater samples to determine the presence and concentration of various chemical, physical, and biological parameters. Seawater testing aims to understand the quality and health of the ocean and coastal environments and to identify any potential hazards to human health or the environment.</p>
+        </div>
+        <div class="card">
+            <h2>Soil and GW Testing</h2>
+            <p>Soil and groundwater are tested for physicochemical properties, including total dissolved solids, pH, hardness of water, cations, anions, organic matter, total carbon, nitrate, ammonium, and heavy metals.</p>
+        </div>
+        <div class="card">
+            <h2>Noise Monitoring</h2>
+            <p>Noise monitoring is essential whenever there’s a risk of exceeding established noise level limits. This practice stems from comprehensive studies on the connection between noise and health, leading governments in various countries to set national limit values and regulations for environmental noise</p>
+        </div>
+        <div class="card">
+            <h2>Ambient Temperature & Noise Monitoring</h2>
+        </div>
+        <div class="card">
+            <h2>Site Assessment</h2>
+            <p>Site assessment is completed to gather accurate and complete site data to assess if any substance exists above background concentrations that present, or have the potential to present a risk of harm to human health, the environment or any environmental values under a given land use.</p>
+        </div>
+        <div class="card">
+            <h2>Regulatory Compliance</h2>
+            <p>Regulatory compliance is the process of adhering to laws, regulations, standards, and other rules set forth by governments and other regulatory bodies. It is an important aspect of doing business, as companies are required to follow certain laws and regulations to maintain their operations.</p>
+        </div>
+</body>
+</html>

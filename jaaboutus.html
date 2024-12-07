@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+ body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            padding: 0;
+        }
+
+        .nav {
+            height: 80px;
+            background: linear-gradient(90deg, #2c6e49, #4caf50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            position: relative;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color:  rgb(146, 146, 189);
+            border-radius: 5px;
+            
+        }
+
+        .dropdown_menue {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #375a7f;
+            border-radius: 5px;
+            z-index: 1000;
+            
+        }
+
+        .dropdown_menue ul {
+            margin: 10;
+            display: block;
+        }
+
+        .dropdown_menue ul li {
+            padding: 10px;
+            width: 400px;
+            
+        }
+
+        .dropdown_menue ul li a {
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown_menue ul li a:hover {
+            background-color: #ff6f61;
+        }
+
+        .nav li:hover .dropdown_menue {
+            display: block;
+        }
+
+        .about {
+            background-color: beige;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+
+        .text {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            width: 90%;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+
+            .navigation a {
+                margin: 10px 0;
+                font-size: 16px;
+            }
+
+            .text {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="jahome.html">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <div class="dropdown_menue">
+                    <ul>
+                        <li><a href="jaservices.html">Organic Waste Solutions</a></li>
+                        <li><a href="jahaz.html">Hazardous Waste Solutions</a></li>
+                        <li><a href="jaenv.html">Environmental Management Solutions</a></li>
+                        <li><a href="jawa.html">Water Treatment Solutions</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="jaaboutus.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="about">About Us</div>
+    <div class="text">
+       We offers specialist environmental services in the area of waste management, such as collection,
+handling, treatment, and disposal, and is officially accredited by the government of the UAE.​
+
+    </div>
+
+    <div class="text">
+       <h3>Vision:</h3><p>The company&#39;s aim is to be known as industry pioneers in the provision of technical,
+    engineering, and consulting environmental solutions and services throughout the United Arab
+    Emirates while assuring client satisfaction with first-rate customer care.​</p>
+    </div>
+    <div class="text">
+        <h3>Our Objectives:</h3>
+        <li>providing outstanding, dependable, and high-quality services.</li>
+        <li>helping to protect our environment.</li>
+        <li>expanding regionally and within the United Arab Emirates.</li>
+        <li>raising community knowledge of the four Rs (reduction, reuse, recycling, and recovery)
+            of garbage.</li>
+        <li>creating a productive and motivated workforce to foster a sense of community.</li>
+        <li>aiming for more recognition from the community</li>
+        <li>Adding air and noise measurement and control to our business.​</li>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> All rights reserved.</p>
+    </footer>
+
+
+    <script>
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

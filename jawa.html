@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Treatment Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; 
+        }
+
+        .nav {
+            height: 80px;
+            background: linear-gradient(90deg, #2c6e49, #4caf50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            position: relative;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: rgb(146, 146, 189);
+            border-radius: 5px;
+        }
+
+        .logo{
+            height:80px;
+            width: auto;
+        }
+        .logo img {
+            height: 100%;
+            max-height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+        .dropdown_menue {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #375a7f;
+            z-index: 1000;
+        }
+        .dropdown_menue ul {
+            display: block;
+            margin: 10;
+        }
+        .dropdown_menue ul li {
+            padding: 10px;
+            width: 400px;
+        }
+        .dropdown_menue ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .dropdown_menue ul li a:hover {
+            background-color:red;
+            display: block;
+        }
+
+        .nav li:hover .dropdown_menue {
+            display: block;
+        }
+
+        .txt {
+            height: 80px;
+            background-color: gainsboro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .text {
+            background-color: white; 
+            margin: 20px auto;
+            padding: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            width: 90%;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+            margin: 50px;
+        }
+
+        .card {
+            background-color: white;
+            width: 300px;
+            height: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%; 
+            height: 180px; 
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="jahome.html">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <div class="dropdown_menue">
+                    <ul>
+                        <li><a href="jaservices.html">Organic Waste Solutions</a></li>
+                        <li><a href="jahaz.html">Hazardous Waste Solutions</a></li>
+                        <li><a href="jaenv.html">Environmental Management Solutions</a></li>
+                        <li><a href="jawa.html">Water Treatment Solutions</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="jaaboutus.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="txt">
+        <h2>Water Treatment Solutions</h2>
+    </div>
+
+    <div class="text">
+        <p>The growing scarcity of the world’s water resources calls for more innovative technologies and solutions. As a leading water treatment equipment manufacturer, we offer a range of products to address municipal wastewater treatment and reuse, drinking water production, desalination, and more. Our solutions are tailored specifically to the process water production and effluent treatment needs of industrial customers worldwide. Partner with us today!</p>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://i.pinimg.com/236x/d3/cf/15/d3cf1587db5ac5ee8fcd33514c4d04b0.jpg" alt="Municipal & Reuse">
+            <h2>Municipal & Reuse</h2>
+            <p>Municipal reuse centers prevent waste by offering spaces for local green businesses to transform materials into new products.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/236x/e4/c8/cb/e4c8cbe531a6f758375e96898baaa960.jpg" alt="Industrial Water">
+            <h2>Industrial Water</h2>
+            <p>Industrial water is used in production processes, including cleaning, rinsing, and preparing active baths.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/236x/53/89/ba/5389badfc3484c8d89a53b4c1df5b1d5.jpg" alt="Drinking & Desalination">
+            <h2>Drinking & Desalination</h2>
+            <p>Desalination removes dissolved salts in seawater, making it a vital process for obtaining fresh water.</p>
+        </div>
+    </div>
+
+</body>
+</html>

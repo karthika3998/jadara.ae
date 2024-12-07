@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Waste Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif, Verdana;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .nav {
+            height: 80px;
+            background: linear-gradient(90deg, #2c6e49, #4caf50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            position: relative;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: rgb(146, 146, 189);
+            border-radius: 5px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #375a7f;
+            z-index: 1000;
+        }
+
+        .dropdown-menu ul {
+            margin: 10;
+            display: block;
+        }
+
+        .dropdown-menu ul li {
+            padding: 10px;
+            width: 400px;
+        }
+
+        .dropdown-menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .dropdown-menu ul li a:hover {
+            background-color: red;
+        }
+
+        .nav li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .main-heading {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #e8e8e8, #f9f9f9);
+            margin: 25px 50px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 50px;
+        }
+
+        .card {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-content {
+            flex-grow: 1;
+        }
+
+        .card h2 {
+            color: #2c6e49;
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .card ul {
+            list-style: square;
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%;
+            }
+
+            .main-heading {
+                margin: 20px;
+            }
+
+            .nav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="jahome.html">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="jaservices.html">Organic Waste Solutions</a></li>
+                        <li><a href="jahaz.html">Hazardous Waste Solutions</a></li>
+                        <li><a href="jaenv.html">Environmental Management Solutions</a></li>
+                        <li><a href="jawa.html">Water Treatment Solutions</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="jaaboutus.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="main-heading">
+        <h2>Organic Waste Management</h2>
+    </div>
+
+    <div class="section">
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/dc/42/05/dc420525110a85456b776da9bf7818f3.jpg" alt="Green Waste">
+            <div class="card-content">
+                <h2>Green Waste</h2>
+                <p>Biodegradable waste like grass clippings, branches, and weeds that can be composted and used as fertilizer.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/236x/4c/c4/5c/4cc45ccd5c3d24c1ce28d0e4a48cf253.jpg" alt="Food Waste">
+            <div class="card-content">
+                <h2>Food Waste</h2>
+                <p>Wasted food intended for human consumption lost during farming, transportation, and storage.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Food-Soiled Paper">
+            <div class="card-content">
+                <h2>Food-Soiled Paper</h2>
+                <p>Paper contaminated with food waste that cannot be recycled into new paper products.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/236x/61/8c/7e/618c7eb617cf358e797e567a7017bc8c.jpg" alt="Non-Hazardous Wood Waste">
+            <div class="card-content">
+                <h2>Non-Hazardous Wood Waste</h2>
+                <p>Waste from wood products not considered hazardous but harmful if not disposed of properly.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
